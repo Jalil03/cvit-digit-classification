@@ -1,0 +1,5 @@
+# Dossiers volumineux à exclure
+DIDA2/
+data/
+*.pt
+*.pth
