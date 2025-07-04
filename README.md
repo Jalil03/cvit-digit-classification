@@ -12,8 +12,6 @@ It combines the local feature extraction power of CNNs with the global context m
 ├── dida2.ipynb           # Training on DIDA dataset
 ├── test.ipynb            # Training/testing on EMNIST dataset
 ├── mnist_digits/         # 10 sample digits (0–9) used for testing predictions
-├── best_model_cvit.pt    # Trained model on EMNIST (optional, local only)
-├── best_model_dida.pt    # Trained model on DIDA (optional, local only)
 ├── assets/               # Contains architecture diagrams
 │   ├── archi.png
 │   └── cvit_emnist.png
