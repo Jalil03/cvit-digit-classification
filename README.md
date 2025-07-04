@@ -1,4 +1,3 @@
-
 # CViT – Digit Classification from Arabic and Latin Datasets
 
 This project implements a **Convolutional Vision Transformer (CViT)** to classify handwritten digits from **Arabic (DIDA)** and **Latin (EMNIST)** datasets.  
@@ -15,6 +14,9 @@ It combines the local feature extraction power of CNNs with the global context m
 ├── mnist_digits/         # 10 sample digits (0–9) used for testing predictions
 ├── best_model_cvit.pt    # Trained model on EMNIST (optional, local only)
 ├── best_model_dida.pt    # Trained model on DIDA (optional, local only)
+├── assets/               # Contains architecture diagrams
+│   ├── archi.png
+│   └── cvit_emnist.png
 └── README.md
 ```
 
@@ -86,6 +88,19 @@ The TransformerEncoder models long-range dependencies across spatial image regio
 - The Transformer captures global interactions across the image.
 - This combination allows better generalization, especially for diverse handwriting styles.
 
+---
+
+## 📌 Architecture Diagrams
+
+### 1. CViT Architecture on EMNIST
+
+![CViT Architecture – EMNIST](assets/cvit_emnist.png)
+
+---
+
+### 2. Transformer Encoder Block (Detailed)
+
+![Transformer Block](assets/archi.png)
 
 ---
 
@@ -93,17 +108,17 @@ The TransformerEncoder models long-range dependencies across spatial image regio
 
 ### EMNIST Digits (English Digits)
 - 240,000+ grayscale handwritten digits (28×28)
-- [📎 EMNIST Digits – Download](https://www.nist.gov/itl/products-and-services/emnist-dataset)
+- [EMNIST Digits – Download](https://www.nist.gov/itl/products-and-services/emnist-dataset)
 
-### 🇴🇲 DIDA (Arabic Handwritten Digits)
+### DIDA (Arabic Handwritten Digits)
 - 250,000 RGB digit images (0–9), 64×64, various writers
-- [📎 DIDA Dataset on Kaggle](https://www.kaggle.com/datasets/mloey1/ahdd1)
+- [DIDA Dataset on Kaggle](https://www.kaggle.com/datasets/mloey1/ahdd1)
 
 > Due to size, these datasets are not included in the repo. Please download them separately and place them in `data/` or `DIDA2/`.
 
 ---
 
-##  Testing Generalization with MNIST
+## 🧪 Testing Generalization with MNIST
 
 To test the model’s ability to generalize, we used [MNIST PNG samples](https://github.com/myleott/mnist_png) to predict digits with both models:
 
@@ -111,7 +126,7 @@ To test the model’s ability to generalize, we used [MNIST PNG samples](https:/
 |------------------|----------------------------|
 | EMNIST           | ✅ 7/10 correct            |
 
-📸 See the predictions visualized in `test.py`.
+See the predictions visualized in `test.py`.
 
 ---
 
@@ -150,15 +165,14 @@ python test.py
 
 ---
 
-##  Author
+## Author
 
 **Abdeljalil BOUZINE**  
- Master AIDC – 2025  
- USMS, Morocco
+Master AIDC – 2025  
+USMS, Morocco
 
 ---
 
-##  License
+## License
 
 This project is for academic and educational use. Datasets are licensed under their respective terms.
-
