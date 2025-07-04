@@ -118,7 +118,7 @@ The TransformerEncoder models long-range dependencies across spatial image regio
 
 ---
 
-## 🧪 Testing Generalization with MNIST
+##  Testing Generalization with MNIST
 
 To test the model’s ability to generalize, we used [MNIST PNG samples](https://github.com/myleott/mnist_png) to predict digits with both models:
 
@@ -130,7 +130,7 @@ See the predictions visualized in `test.py`.
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Clone the repo:
 
@@ -155,7 +155,7 @@ python test.py
 
 ---
 
-## 📈 Training Details
+## Training Details
 
 - Optimizer: SGD (lr = 0.01, momentum = 0.9)
 - Loss: CrossEntropy with label smoothing
